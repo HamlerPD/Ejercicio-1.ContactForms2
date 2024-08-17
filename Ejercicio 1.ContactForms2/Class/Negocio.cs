@@ -18,7 +18,7 @@ namespace Ejercicio_1.ContactForms2.Class
         private string _direccion;
         private string _posicion;
         private string _deparmento;
-        private DaylightTime _fechaContratacion;
+        private DateTime _fechaContratacion;
 
         #endregion
 
@@ -35,21 +35,21 @@ namespace Ejercicio_1.ContactForms2.Class
         }
 
         /// <summary>
-        /// Esta propiedad es para almacenar el codigo del contacto.
-        /// </summary>
-        public string Codigo
-        {
-            get { return _codigo; }
-            set { _codigo = value; }
-        }
-
-        /// <summary>
         /// Esta propiedad es para almacenar el apellido del contacto.
         /// </summary>
         public string Apellidos
         {
             get { return _apellidos; }
             set { _apellidos = value; }
+        }
+
+        /// <summary>
+        /// Esta propiedad es para almacenar el codigo del contacto.
+        /// </summary>
+        public string Codigo
+        {
+            get { return _codigo; }
+            set { _codigo = value; }
         }
 
 
@@ -104,11 +104,12 @@ namespace Ejercicio_1.ContactForms2.Class
         /// Esta propiedad es para almacenar la fecha de contratacion del contacto.
         /// </summary>
 
-        public DaylightTime FechaContratacion
+        public DateTime FechaContratacion
         {
             get { return _fechaContratacion; }
             set { _fechaContratacion = value; }
         }
+
         #endregion
 
 
